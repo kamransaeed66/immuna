@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      Tailwind Starter Template 
+    </title>
+    <meta name="description" content="Simple landind page" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="output-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blue: '#1D7DEA',
+              black: '#2C2C2C',
+
+            }
+          }
+        }
+      }
+    </script>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+
+  </head>
+  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav-->
+    <nav id="header" class="fixed w-full z-30 top-0 border">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="pl-4 flex items-center">
+          <img src="../assets/images/Frame 304.svg">
+        </div>
+       <!-- component -->
+
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+    <!--Hero-->
+  
+   <!-- component -->
+<!-- This is an example component -->
+<div class="max-w-md mx-auto mt-24">
+	<div
+		class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
+		<form class="space-y-6" action="#">
+			<h3 class="text-3xl text-center font-medium text-gray-900 dark:text-white">Welcome to Immuna!</h3>
+			<h3 class="text-xl text-center font-normal text-gray-900 dark:text-white">Connect your wallet</h3>
+			<div >
+        <div class=" flex">
+          <img src="../assets/images/Vector.svg" class="mb-2">
+            <label for="email" class="text-lg font-normal text-gray-900 block mb-2 dark:text-gray-300 pl-2">Ethereum</label>
+        </div>
+          <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter wallet address" required="">
+        </div>
+		
+					
+						<button type="submit" class="w-full text-white bg-blue  focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Connect to Wallet</button>
+						
+		</form>
+	</div>
+</div>
+    
+  
+ 
+
+  </body>
+</html>

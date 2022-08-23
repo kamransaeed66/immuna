@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>
+          Tailwind Starter Template 
+        </title>
+        <meta name="description" content="Simple landind page" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="output-style.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  blue: '#1D7DEA',
+                  black: '#2C2C2C',
+                  gray:'#4A4A4A',
+                  boxShadow: '#4A4A4A'
+    
+                },
+                maxWidth: {
+                    half: '50%'
+                }
+           
+              }
+            }
+          }
+        </script>
+        <!--Replace with your tailwind.css once created-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+        <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    
+      </head>
+  <body>
+    <div class="flex w-full">
+        <div class="cols-3 w-1/4 bg-white h-auto">
+                <aside  aria-label="Sidebar">
+                    <div class="py-4 px-3">
+                        <div class="pl-12">
+                            <a class="">
+                                <img src="../assets/images/Frame 304.svg">
+                            </a>
+                        </div>
+                       <ul class="space-y-2 mt-12 pl-10">
+                          <li>
+                             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <img src="../assets/images/dashboard-black.svg" class="">
+                                <span class="ml-3">Dashboard</span>
+                             </a>
+                          </li>
+                          <li>
+                            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                               <img src="../assets/images/Alerts.svg" class="">
+                               <span class="ml-3">Alerts</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                               <img src="../assets/images/Defined.svg" class="">
+                               <span class="ml-3">Defined</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                               <img src="../assets/images/Protect.svg" class="">
+                               <span class="ml-3">Protect</span>
+                            </a>
+                         </li>
+                   
+                   
+                       </ul>
+                    </div>
+                 </aside>
+        </div>
+       
+        
+            <div class="cols-8 w-3/4">
+                <div class="bg-white shadow  py-4 flex" >
+                    <div class="px-4 ">
+                        Dashboard
+                    </div>
+                    <div class="relative w-full pl-4">
+                        <div class="flex absolute inset-y-0 left-0 items-center pl-4 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <input type="text"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full focus:ring-blue-500 focus:border-blue-500 block w-1/4 pl-10 p-1.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required>
+                    </div>
+                </div>
+                <div class="py-12 px-4 bg-slate-200  h-screen">
+                    <div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg ">
+                        <table class="min-w-full">
+                            <thead>
+                                <tr>
+                                    <th
+                                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                        Protocol</th>
+                                    <th
+                                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                        Pool </th>
+                                    <th
+                                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                        My Liquidity      </th>
+                                    <th
+                                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                        Risk Status</th>
+                                    <th
+                                        class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+                                        Assesment</th>
+                                </tr>
+                            </thead>
+            
+                            <tbody class="bg-white">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    Compound FInance
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 w-10 h-10">
+                                                <img class="w-10 h-10 rounded-full" src="../assets/images/eth.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+            
+                                            <div class="pl-2">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    0x75f5...16666
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                            class="inline-flex px-2 text-xs font-semibold leading-5   rounded-full">1.104008 WETH / 2,888.28 USDC</span>
+                                    </td>
+            
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                        class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-green-800 bg-green-100 rounded-full w-full h-9 items-center justify-center">Green</span>
+                                    </td>
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <a class="text-sm font-medium leading-5 text-gray-900">
+                                                    Click to View
+                                                </a>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    Compound FInance
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 w-10 h-10">
+                                                <img class="w-10 h-10 rounded-full" src="../assets/images/daidai.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+            
+                                            <div class="pl-2">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    0x75f5...16666
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                            class="inline-flex px-2 text-xs font-semibold leading-5  rounded-full">300 DAIDAI / 300 USDC</span>
+                                    </td>
+            
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                        class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-red-800 bg-red-100 rounded-full w-full h-9 items-center justify-center">Red</span>
+                                    </td>
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <a class="text-sm font-medium leading-5 text-gray-900">
+                                                    Click to View
+                                                </a>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    Compound FInance
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 w-10 h-10">
+                                                <img class="w-10 h-10 rounded-full" src="../assets/images/busd.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+            
+                                            <div class="pl-2">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    0x75f5...16666
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                            class="inline-flex px-2 text-xs font-semibold leading-5  rounded-full">500 BUSD / 500 USDT</span>
+                                    </td>
+            
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                        class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-yellow-800 bg-yellow-100 rounded-full w-full h-9 items-center justify-center">Yellow</span>
+                                    </td>
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <a class="text-sm font-medium leading-5 text-gray-900">
+                                                    Click to View
+                                                </a>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    Compound FInance
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 w-10 h-10">
+                                                <img class="w-10 h-10 rounded-full" src="../assets/images/weth.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+            
+                                            <div class="pl-2">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    0x75f5...16666
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                            class="inline-flex px-2 text-xs font-semibold leading-5  rounded-full">0.624822 WETH / 339,97585406 1INCH</span>
+                                    </td>
+            
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                        class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-green-800 bg-green-100 rounded-full w-full h-9 items-center justify-center">Green</span>
+                                    </td>
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <a class="text-sm font-medium leading-5 text-gray-900">
+                                                    Click to View
+                                                </a>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    Compound FInance
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 w-10 h-10">
+                                                <img class="w-10 h-10 rounded-full" src="../assets/images/daidai-weth.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+            
+                                            <div class="pl-2">
+                                                <div class="text-sm font-medium leading-5 text-gray-900">
+                                                    0x75f5...16666
+                                                </div>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+            
+                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                            class="inline-flex px-2 text-xs font-semibold leading-5   rounded-full">1.104008 WETH / 2,888.28 USDC</span>
+                                    </td>
+            
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <span
+                                        class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-green-800 bg-green-100 rounded-full w-full h-9 items-center justify-center">Green</span>
+                                    </td>
+                                    <td
+                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
+                                        <div class="flex items-center">
+                                            <div class="">
+                                                <a class="text-sm font-medium leading-5 text-gray-900">
+                                                    Click to View
+                                                </a>
+                                            </div>
+                                            <div class=" w-8 h-6 pl-2 mt-1">
+                                                <img class="" src="../assets/images/protocol.svg"
+                                                    alt="admin dashboard ui">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+    
+  </body>
+</html>
