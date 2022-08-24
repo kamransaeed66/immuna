@@ -3,54 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>immuna Dashboard</title>
-
-    <!-- Inter font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <title>Defend - Immuna Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
     <script src="./assets/js/init-alpine.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
-      defer
-    ></script>
-    <script src="./assets/js/charts-lines.js" defer></script>
-    <script src="./assets/js/charts-pie.js" defer></script>
   </head>
   <body>
     <div
       class="flex h-screen bg-gray-50 dark:bg-gray-900"
-      :class="{ 'overflow-hidden': isSideMenuOpen }"
+      :class="{ 'overflow-hidden': isSideMenuOpen}"
     >
       <!-- Desktop sidebar -->
       <aside
-        class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block"
+        class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0"
       >
         <div class="py-4 text-gray-500 dark:text-gray-400">
-          <div>
-            <a
-              class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
-              href="#"
-            >
-            <img class="mx-auto" src="../public/assets/img/Frame 304.svg">
-            </a>
-          </div>
+          <a
+            class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
+            href="#"
+          >
+          <img src="../public/assets/img/Frame 304.svg">
+          </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
-              <span
-                class="absolute w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 href="index.html"
               >
               <img src="../public/assets/img/dashboard-black.svg">
@@ -77,8 +61,12 @@
               </a>
             </li>
             <li class="relative px-6 py-3">
+              <span
+                class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"
+              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 href="defend.html"
               >
               <img src="../public/assets/img/Defined.svg">
@@ -103,8 +91,6 @@
                 <span class="ml-4">Protect</span>
               </a>
             </li>
-   
-          </ul>
     
         </div>
       </aside>
@@ -137,16 +123,12 @@
             class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200"
             href="#"
           >
-          <img class="mx-auto" src="../public/assets/img/Frame 304.svg">
+          <img src="../public/assets/img/Frame 304.svg">
           </a>
           <ul class="mt-6">
             <li class="relative px-6 py-3">
-              <span
-                class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"
-                aria-hidden="true"
-              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 href="index.html"
               >
               <img src="../public/assets/img/dashboard-black.svg">
@@ -173,8 +155,12 @@
               </a>
             </li>
             <li class="relative px-6 py-3">
+              <span
+                class="absolute inset-y-0 left-0 w-1 bg-blue-500 rounded-tr-lg rounded-br-lg"
+                aria-hidden="true"
+              ></span>
               <a
-                class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
                 href="defend.html"
               >
               <img src="../public/assets/img/Defined.svg">
@@ -200,19 +186,16 @@
               </a>
             </li>
       
-          </ul>
-    
         </div>
       </aside>
-      <div class="flex flex-col flex-1 w-full">
+      <div class="flex flex-col flex-1">
         <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
           <div
-            class=" flex items-center justify-between h-full px-6 mx-auto text-black dark:text-purple-300"
+            class="container flex items-center justify-between h-full px-6 mx-auto text-blue-500 dark:text-purple-300"
           >
-      
             <!-- Mobile hamburger -->
             <button
-              class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-blue"
+              class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
               @click="toggleSideMenu"
               aria-label="Menu"
             >
@@ -229,14 +212,10 @@
                 ></path>
               </svg>
             </button>
-            <!-- Name -->
-            <div class="hidden md:block">
-                DashBoard
-            </div>
             <!-- Search input -->
             <div class="flex justify-center flex-1 lg:mr-32">
               <div
-                class="relative w-full max-w-xl mr-6 focus-within:text-blue-500"
+                class="relative w-full max-w-xl mr-6 focus-within:text-purple-500"
               >
                 <div class="absolute inset-y-0 flex items-center pl-2">
                   <svg
@@ -253,7 +232,7 @@
                   </svg>
                 </div>
                 <input
-                  class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-full dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
+                  class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-md dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
                   type="text"
                   placeholder="Search for projects"
                   aria-label="Search"
@@ -268,9 +247,7 @@
                   @click="toggleTheme"
                   aria-label="Toggle color mode"
                 >
-                  <template x-if="!dark">
-                 
-                  </template>
+                  
                   <template x-if="dark">
                     <svg
                       class="w-5 h-5"
@@ -320,6 +297,7 @@
                     @click.away="closeNotificationsMenu"
                     @keydown.escape="closeNotificationsMenu"
                     class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:text-gray-300 dark:border-gray-700 dark:bg-gray-700"
+                    aria-label="submenu"
                   >
                     <li class="flex">
                       <a
@@ -359,9 +337,9 @@
                 </template>
               </li>
               <!-- Profile menu -->
-              <li class="relative " >
+              <li class="relative">
                 <button
-                  class="align-middle rounded-full focus:shadow-outline-blue focus:outline-none flex items-center"
+                  class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none"
                   @click="toggleProfileMenu"
                   @keydown.escape="closeProfileMenu"
                   aria-label="Account"
@@ -373,7 +351,6 @@
                     alt=""
                     aria-hidden="true"
                   />
-                    <span class="ml-2 font-semibold">Betty Copper</span>
                 </button>
                 <template x-if="isProfileMenuOpen">
                   <ul
@@ -458,53 +435,27 @@
             </ul>
           </div>
         </header>
-        <main class="h-full overflow-y-auto">
+        <main class="h-full pb-16 overflow-y-auto">
           <div class=" px-6  grid">
-            <div >
-              <h2
-                class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
-              >
-                Immuna Monitor Portal
-              </h2>
-              <div
-                class="relative w-full max-w-xl mr-6 focus-within:text-blue-500"
-              >
-                <div class="absolute inset-y-0 flex items-center pl-2">
-                  <svg
-                    class="w-4 h-4"
-                    aria-hidden="true"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </div>
-                <input
-                  class="w-full pl-8 pr-2 text-sm text-gray-700 placeholder-gray-600 bg-gray-100 border-0 rounded-full dark:placeholder-gray-500 dark:focus:shadow-outline-gray dark:focus:placeholder-gray-600 dark:bg-gray-700 dark:text-gray-200 focus:placeholder-gray-500 focus:bg-white focus:border-purple-300 focus:outline-none focus:shadow-outline-purple form-input"
-                  type="text"
-                  placeholder="Search for projects"
-                  aria-label="Search"
-                />
-              </div>
-            </div>
-         
-            <!-- New Table -->
+            <h2
+              class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
+            >
+            Immuna Defend
+            </h2>
+                      <!-- New Table -->
             <div class="w-full overflow-hidden rounded-lg shadow-xs">
               <div class="w-full overflow-x-auto">
                 <table class="w-full whitespace-no-wrap">
                   <thead>
                     <tr
-                      class="text-xs font-semibold tracking-wide text-left text-gray-500  border-b  bg-blue-lightBlue "
+                      class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
                     >
                       <th class="px-4 py-3">Protocol</th>
                       <th class="px-4 py-3">Pool</th>
                       <th class="px-4 py-3">My Liquidity</th>
-                      <th class="px-4 py-3">Risk Status</th>
-                      <th class="px-4 py-3">Assessment</th>
+                      <th class="px-4 py-3">Events</th>
+                      <th class="px-4 py-3">Action</th>
+                      <th class="px-4 py-3">Deploy </th>
                     </tr>
                   </thead>
                   <tbody
@@ -515,15 +466,15 @@
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Compound Finance</p>
+                            <p class="font-semibold">Compound Finance</p>
                             
                           </div>
                           <!-- Avatar with inset shadow -->
                           <div
-                            class="relative hidden w-full h-5 mr-3  md:block"
+                            class="relative hidden w-8 h-6 mr-3  md:block"
                           >
                             <img
-                              class="object-cover w-7 h-5 pl-2 "
+                              class="object-cover w-8 h-6 pl-2 "
                               src="../public/assets/img/protocol.svg"
                               alt=""
                               loading="lazy"
@@ -537,23 +488,23 @@
                       </td>
                       <td class="px-4 py-3 text-sm">
                         <div class="flex items-center text-sm">
-                             <!-- Avatar with inset shadow -->
-                             <div
-                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
-                           >
-                             <img
-                               class="object-cover w-full h-full rounded-full"
-                               src="../public/assets/img/eth.svg"
-                               alt=""
-                               loading="lazy"
-                             />
-                             <div
-                               class="absolute inset-0 rounded-full shadow-inner"
-                               aria-hidden="true"
-                             ></div>
-                           </div>
+                            <!-- Avatar with inset shadow -->
+                            <div
+                            class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
+                          >
+                            <img
+                              class="object-cover w-full h-full rounded-full"
+                              src="../public/assets/img/eth.svg"
+                              alt=""
+                              loading="lazy"
+                            />
+                            <div
+                              class="absolute inset-0 rounded-full shadow-inner"
+                              aria-hidden="true"
+                            ></div>
+                          </div>
                           <div>
-                            <p class="font-normal">0x75f5...1666</p>
+                            <p class="font-semibold">0x75f5...1666</p>
                             
                           </div>
                           <!-- Avatar with inset shadow -->
@@ -561,7 +512,7 @@
                             class="relative hidden w-8 h-6 mr-3  md:block"
                           >
                             <img
-                              class="object-cover w-7 h-5 pl-2 "
+                              class="object-cover w-8 h-6 pl-2 "
                               src="../public/assets/img/protocol.svg"
                               alt=""
                               loading="lazy"
@@ -580,35 +531,24 @@
                         1.104008 WETH / 2,888.28 USDC
                         </span>
                       </td>
-                      <!-- <td class="px-4 h-9 w-10 py-3 text-sm font-normal leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100 text-center">
-                        Green
-                      </td> -->
-                      <td
-                          class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                          <span
-                          class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-green-800 bg-green-100 rounded-full w-full h-12 items-center justify-center">Green</span>
+                      <td class="px-4 py-3 text-sm font-semibold leading-tight text-center">
+                        Low liquidity
                       </td>
                       <td class="px-4 py-3 text-sm ">
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Click To View</p>
+                            <p class="font-semibold">Exit liquidity</p>
                             
                           </div>
-                          <!-- Avatar with inset shadow -->
-                          <div
-                            class="relative hidden w-8 h-6 mr-3  md:block"
-                          >
-                            <img
-                              class="object-cover w-7 h-5 pl-2 "
-                              src="../public/assets/img/protocol.svg"
-                              alt=""
-                              loading="lazy"
-                            />
-                            <div
-                              class="absolute inset-0  shadow-inner"
-                              aria-hidden="true"
-                            ></div>
+                        </div>
+                      </td>
+                      <td class="px-4 py-3 text-sm ">
+                        <div class="flex items-center text-sm">
+                          
+                          <div>
+                            <p class="font-semibold">Disable</p>
+                            
                           </div>
                         </div>
                       </td>
@@ -618,7 +558,7 @@
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Compound Finance</p>
+                            <p class="font-semibold">Compound Finance</p>
                             
                           </div>
                           <!-- Avatar with inset shadow -->
@@ -626,7 +566,7 @@
                             class="relative hidden w-8 h-6 mr-3  md:block"
                           >
                             <img
-                              class="object-cover w-7 h-5 pl-2 "
+                              class="object-cover w-8 h-6 pl-2 "
                               src="../public/assets/img/protocol.svg"
                               alt=""
                               loading="lazy"
@@ -640,39 +580,39 @@
                       </td>
                       <td class="px-4 py-3 text-sm">
                         <div class="flex items-center text-sm">
-                             <!-- Avatar with inset shadow -->
-                             <div
-                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
-                           >
-                             <img
-                               class="object-cover w-full h-full rounded-full"
-                               src="../public/assets/img/daidai.svg"
-                               alt=""
-                               loading="lazy"
-                             />
-                             <div
-                               class="absolute inset-0 rounded-full shadow-inner"
-                               aria-hidden="true"
-                             ></div>
-                           </div>
+                            <!-- Avatar with inset shadow -->
+                            <div
+                            class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
+                          >
+                            <img
+                              class="object-cover w-full h-full rounded-full"
+                              src="../public/assets/img/daidai.svg"
+                              alt=""
+                              loading="lazy"
+                            />
+                            <div
+                              class="absolute inset-0 rounded-full shadow-inner"
+                              aria-hidden="true"
+                            ></div>
+                          </div>
                           <div>
-                            <p class="font-normal">0x75f5...1666</p>
+                            <p class="font-semibold">0x75f5...1666</p>
                             
                           </div>
-                           <!-- Avatar with inset shadow -->
-                           <div
-                           class="relative hidden w-8 h-6 mr-3  md:block"
-                         >
-                           <img
-                             class="object-cover w-7 h-5 pl-2 "
-                             src="../public/assets/img/protocol.svg"
-                             alt=""
-                             loading="lazy"
-                           />
-                           <div
-                             class="absolute inset-0  shadow-inner"
-                             aria-hidden="true"
-                           ></div>
+                          <!-- Avatar with inset shadow -->
+                          <div
+                          class="relative hidden w-8 h-6 mr-3  md:block"
+                        >
+                          <img
+                            class="object-cover w-8 h-6 pl-2 "
+                            src="../public/assets/img/protocol.svg"
+                            alt=""
+                            loading="lazy"
+                          />
+                          <div
+                            class="absolute inset-0  shadow-inner"
+                            aria-hidden="true"
+                          ></div>
                           </div>
                         </div>
                       </td>
@@ -683,32 +623,24 @@
                         300 DAIDAI / 300 USDC
                         </span>
                       </td>
-                      <td
-                      class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                      <span
-                      class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-red-800 bg-red-100 rounded-full w-full h-12 items-center justify-center">Red</span>
-                     </td>
+                      <td class="px-4 py-3 text-sm font-semibold leading-tight text-center">
+                        Low liquidity
+                      </td>
                       <td class="px-4 py-3 text-sm ">
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Click To View</p>
+                            <p class="font-semibold">Exit liquidity</p>
                             
                           </div>
-                          <!-- Avatar with inset shadow -->
-                          <div
-                            class="relative hidden w-8 h-6 mr-3  md:block"
-                          >
-                            <img
-                              class="object-cover w-7 h-5 pl-2 "
-                              src="../public/assets/img/protocol.svg"
-                              alt=""
-                              loading="lazy"
-                            />
-                            <div
-                              class="absolute inset-0  shadow-inner"
-                              aria-hidden="true"
-                            ></div>
+                        </div>
+                      </td>
+                      <td class="px-4 py-3 text-sm ">
+                        <div class="flex items-center text-sm">
+                          
+                          <div>
+                            <p class="font-semibold">Disable</p>
+                            
                           </div>
                         </div>
                       </td>
@@ -718,45 +650,45 @@
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Compound Finance</p>
+                            <p class="font-semibold">Compound Finance</p>
                             
                           </div>
-                         <!-- Avatar with inset shadow -->
-                         <div
-                         class="relative hidden w-7 h-5 mr-3  md:block"
-                       >
-                         <img
-                           class="object-cover w-8 h-6 pl-2 "
-                           src="../public/assets/img/protocol.svg"
-                           alt=""
-                           loading="lazy"
-                         />
-                         <div
-                           class="absolute inset-0  shadow-inner"
-                           aria-hidden="true"
-                         ></div>
+                        <!-- Avatar with inset shadow -->
+                        <div
+                        class="relative hidden w-8 h-6 mr-3  md:block"
+                      >
+                        <img
+                          class="object-cover w-8 h-6 pl-2 "
+                          src="../public/assets/img/protocol.svg"
+                          alt=""
+                          loading="lazy"
+                        />
+                        <div
+                          class="absolute inset-0  shadow-inner"
+                          aria-hidden="true"
+                        ></div>
                           </div>
                         </div>
                       </td>
                       <td class="px-4 py-3 text-sm">
                         <div class="flex items-center text-sm">
-                             <!-- Avatar with inset shadow -->
-                             <div
-                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
-                           >
-                             <img
-                               class="object-cover w-full h-full rounded-full"
-                               src="../public/assets/img/busd.svg"
-                               alt=""
-                               loading="lazy"
-                             />
-                             <div
-                               class="absolute inset-0 rounded-full shadow-inner"
-                               aria-hidden="true"
-                             ></div>
-                           </div>
+                            <!-- Avatar with inset shadow -->
+                            <div
+                            class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
+                          >
+                            <img
+                              class="object-cover w-full h-full rounded-full"
+                              src="../public/assets/img/busd.svg"
+                              alt=""
+                              loading="lazy"
+                            />
+                            <div
+                              class="absolute inset-0 rounded-full shadow-inner"
+                              aria-hidden="true"
+                            ></div>
+                          </div>
                           <div>
-                            <p class="font-normal">0x75f5...1666</p>
+                            <p class="font-semibold">0x75f5...1666</p>
                             
                           </div>
                           <!-- Avatar with inset shadow -->
@@ -764,7 +696,7 @@
                             class="relative hidden w-8 h-6 mr-3  md:block"
                           >
                             <img
-                              class="object-cover w-7 h-5 pl-2 "
+                              class="object-cover w-8 h-6 pl-2 "
                               src="../public/assets/img/protocol.svg"
                               alt=""
                               loading="lazy"
@@ -783,35 +715,24 @@
                         500 BUSD / 500 USDT
                         </span>
                       </td>
-                      <!-- <td class="px-4 py-3 text-sm font-semibold leading-tight text-yellow-800 bg-yellow-100 rounded-full dark:bg-yellow-700 dark:text-yellow-800 text-center">
-                        Yellow
-                      </td> -->
-                      <td
-                          class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                          <span
-                          class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-green-800 bg-green-100 rounded-full w-full h-12 items-center justify-center">Green</span>
+                      <td class="px-4 py-3 text-sm font-semibold leading-tight text-center">
+                        Low liquidity
                       </td>
                       <td class="px-4 py-3 text-sm ">
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Click To View</p>
+                            <p class="font-semibold">Exit liquidity</p>
                             
                           </div>
-                         <!-- Avatar with inset shadow -->
-                         <div
-                         class="relative hidden w-8 h-6 mr-3  md:block"
-                       >
-                         <img
-                           class="object-cover w-7 h-5 pl-2 "
-                           src="../public/assets/img/protocol.svg"
-                           alt=""
-                           loading="lazy"
-                         />
-                         <div
-                           class="absolute inset-0  shadow-inner"
-                           aria-hidden="true"
-                         ></div>
+                        </div>
+                      </td>
+                      <td class="px-4 py-3 text-sm ">
+                        <div class="flex items-center text-sm">
+                          
+                          <div>
+                            <p class="font-semibold">Deploy</p>
+                            
                           </div>
                         </div>
                       </td>
@@ -821,7 +742,7 @@
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Compound Finance</p>
+                            <p class="font-semibold">Compound Finance</p>
                             
                           </div>
                           <!-- Avatar with inset shadow -->
@@ -829,7 +750,7 @@
                             class="relative hidden w-8 h-6 mr-3  md:block"
                           >
                             <img
-                              class="object-cover w-7 h-5 pl-2 "
+                              class="object-cover w-8 h-6 pl-2 "
                               src="../public/assets/img/protocol.svg"
                               alt=""
                               loading="lazy"
@@ -843,39 +764,39 @@
                       </td>
                       <td class="px-4 py-3 text-sm">
                         <div class="flex items-center text-sm">
-                             <!-- Avatar with inset shadow -->
-                             <div
-                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
-                           >
-                             <img
-                               class="object-cover w-full h-full rounded-full"
-                               src="../public/assets/img/weth.svg"
-                               alt=""
-                               loading="lazy"
-                             />
-                             <div
-                               class="absolute inset-0 rounded-full shadow-inner"
-                               aria-hidden="true"
-                             ></div>
-                           </div>
+                            <!-- Avatar with inset shadow -->
+                            <div
+                            class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
+                          >
+                            <img
+                              class="object-cover w-full h-full rounded-full"
+                              src="../public/assets/img/weth.svg"
+                              alt=""
+                              loading="lazy"
+                            />
+                            <div
+                              class="absolute inset-0 rounded-full shadow-inner"
+                              aria-hidden="true"
+                            ></div>
+                          </div>
                           <div>
-                            <p class="font-normal">0x75f5...1666</p>
+                            <p class="font-semibold">0x75f5...1666</p>
                             
                           </div>
-                         <!-- Avatar with inset shadow -->
-                         <div
-                         class="relative hidden w-8 h-6 mr-3  md:block"
-                       >
-                         <img
-                           class="object-cover w-7 h-5 pl-2 "
-                           src="../public/assets/img/protocol.svg"
-                           alt=""
-                           loading="lazy"
-                         />
-                         <div
-                           class="absolute inset-0  shadow-inner"
-                           aria-hidden="true"
-                         ></div>
+                        <!-- Avatar with inset shadow -->
+                        <div
+                        class="relative hidden w-8 h-6 mr-3  md:block"
+                      >
+                        <img
+                          class="object-cover w-8 h-6 pl-2 "
+                          src="../public/assets/img/protocol.svg"
+                          alt=""
+                          loading="lazy"
+                        />
+                        <div
+                          class="absolute inset-0  shadow-inner"
+                          aria-hidden="true"
+                        ></div>
                           </div>
                         </div>
                       </td>
@@ -886,32 +807,24 @@
                         0.624822 WETH / 339,97585406 1INCH
                         </span>
                       </td>
-                      <td
-                      class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                      <span
-                      class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-green-800 bg-green-100 rounded-full w-full h-12 items-center justify-center">Green</span>
+                      <td class="px-4 py-3 text-sm font-semibold leading-tight text-center">
+                        Low liquidity
                       </td>
                       <td class="px-4 py-3 text-sm ">
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Click To View</p>
+                            <p class="font-semibold">Exit liquidity</p>
                             
                           </div>
-                           <!-- Avatar with inset shadow -->
-                           <div
-                           class="relative hidden w-8 h-6 mr-3  md:block"
-                         >
-                           <img
-                             class="object-cover w-7 h-5 pl-2 "
-                             src="../public/assets/img/protocol.svg"
-                             alt=""
-                             loading="lazy"
-                           />
-                           <div
-                             class="absolute inset-0  shadow-inner"
-                             aria-hidden="true"
-                           ></div>
+                        </div>
+                      </td>
+                      <td class="px-4 py-3 text-sm ">
+                        <div class="flex items-center text-sm">
+                          
+                          <div>
+                            <p class="font-semibold">Disable</p>
+                            
                           </div>
                         </div>
                       </td>
@@ -921,45 +834,45 @@
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Compound Finance</p>
+                            <p class="font-semibold">Compound Finance</p>
                             
                           </div>
-                         <!-- Avatar with inset shadow -->
-                         <div
-                         class="relative hidden w-8 h-6 mr-3  md:block"
-                       >
-                         <img
-                           class="object-cover w-7 h-5 pl-2 "
-                           src="../public/assets/img/protocol.svg"
-                           alt=""
-                           loading="lazy"
-                         />
-                         <div
-                           class="absolute inset-0  shadow-inner"
-                           aria-hidden="true"
-                         ></div>
+                        <!-- Avatar with inset shadow -->
+                        <div
+                        class="relative hidden w-8 h-6 mr-3  md:block"
+                      >
+                        <img
+                          class="object-cover w-8 h-6 pl-2 "
+                          src="../public/assets/img/protocol.svg"
+                          alt=""
+                          loading="lazy"
+                        />
+                        <div
+                          class="absolute inset-0  shadow-inner"
+                          aria-hidden="true"
+                        ></div>
                           </div>
                         </div>
                       </td>
                       <td class="px-4 py-3 text-sm">
                         <div class="flex items-center text-sm">
-                             <!-- Avatar with inset shadow -->
-                             <div
-                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
-                           >
-                             <img
-                               class="object-cover w-full h-full rounded-full"
-                               src="../public/assets/img/daidai-weth.svg"
-                               alt=""
-                               loading="lazy"
-                             />
-                             <div
-                               class="absolute inset-0 rounded-full shadow-inner"
-                               aria-hidden="true"
-                             ></div>
-                           </div>
+                            <!-- Avatar with inset shadow -->
+                            <div
+                            class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
+                          >
+                            <img
+                              class="object-cover w-full h-full rounded-full"
+                              src="../public/assets/img/daidai-weth.svg"
+                              alt=""
+                              loading="lazy"
+                            />
+                            <div
+                              class="absolute inset-0 rounded-full shadow-inner"
+                              aria-hidden="true"
+                            ></div>
+                          </div>
                           <div>
-                            <p class="font-normal">0x75f5...1666</p>
+                            <p class="font-semibold">0x75f5...1666</p>
                             
                           </div>
                           <!-- Avatar with inset shadow -->
@@ -967,7 +880,7 @@
                             class="relative hidden w-8 h-6 mr-3  md:block"
                           >
                             <img
-                              class="object-cover w-7 h-5 pl-2 "
+                              class="object-cover w-8 h-6 pl-2 "
                               src="../public/assets/img/protocol.svg"
                               alt=""
                               loading="lazy"
@@ -986,32 +899,24 @@
                         100 DAIDAI / 0,03837881 WETH
                         </span>
                       </td>
-                      <td
-                      class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                      <span
-                      class="inline-flex px-2 text-xs font-semibold text-center leading-5 text-green-800 bg-green-100 rounded-full w-full h-12 items-center justify-center">Green</span>
+                      <td class="px-4 py-3 text-sm font-semibold leading-tight text-center">
+                        Low liquidity
                       </td>
                       <td class="px-4 py-3 text-sm ">
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-normal">Click To View</p>
+                            <p class="font-semibold">Exit liquidity</p>
                             
                           </div>
-                          <!-- Avatar with inset shadow -->
-                          <div
-                            class="relative hidden w-8 h-6 mr-3  md:block"
-                          >
-                            <img
-                              class="object-cover w-7 h-5 pl-2 "
-                              src="../public/assets/img/protocol.svg"
-                              alt=""
-                              loading="lazy"
-                            />
-                            <div
-                              class="absolute inset-0  shadow-inner"
-                              aria-hidden="true"
-                            ></div>
+                        </div>
+                      </td>
+                      <td class="px-4 py-3 text-sm ">
+                        <div class="flex items-center text-sm">
+                          
+                          <div>
+                            <p class="font-semibold">Deploy</p>
+                            
                           </div>
                         </div>
                       </td>
@@ -1116,8 +1021,6 @@
                 </span>
               </div>
             </div>
-
-  
           </div>
         </main>
       </div>
