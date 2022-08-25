@@ -30,6 +30,7 @@ module.exports = {
         '700': '#24262d',
         '800': '#1a1c23',
         '900': '#121317',
+        '150' : '#2C2C2C',        
         // default values from Tailwind UI palette
         // '300': '#d2d6dc',
         // '400': '#9fa6b2',
@@ -65,6 +66,8 @@ module.exports = {
         '900': '#1a202e',
       },
       red: {
+        'darkRed' : '#CE4848',
+        'lightRed' : '#CA0D0D33',
         '50': '#fdf2f2',
         '100': '#fde8e8',
         '200': '#fbd5d5',
@@ -89,6 +92,7 @@ module.exports = {
         '900': '#771d1d',
       },
       yellow: {
+        'lightYellow' : '#EBFF0033',
         '50': '#fdfdea',
         '100': '#fdf6b2',
         '200': '#fce96a',
@@ -101,6 +105,8 @@ module.exports = {
         '900': '#633112',
       },
       green: {
+        'darkGreen': '#5BCE48',
+        'lightGreen': '#28CA0D33',
         '50': '#f3faf7',
         '100': '#def7ec',
         '200': '#bcf0da',
@@ -125,9 +131,14 @@ module.exports = {
         '900': '#014451',
       },
       blue: {
-        
+        '50' : '#F4F9FF',
+        'lightBlue' : '#E6F0FF',
         '500': '#1D7DEA',
-        'lightBlue' : '#E6F0FF'
+        '80' : '#3A82E9',
+        'dark' : '#1D7DEA',
+        '300': '#E6F0FF',
+        '400':'#CBE1FF',
+    
       },
       indigo: {
         '50': '#f0f5ff',
@@ -165,29 +176,7 @@ module.exports = {
         '800': '#99154b',
         '900': '#751a3d',
       },
-    },
-    extend: {
-      maxHeight: {
-        '0': '0',
-        xl: '36rem',
-      },
-      fontFamily: {
-        sans: ['Inter'],
-      },
-    },
-  },
-  variants: {
-    backgroundColor: [
-      'hover',
-      'focus',
-      'active',
-      'odd',
-      'dark',
-      'dark:hover',
-      'dark:focus',
-      'dark:active',
-      'dark:odd',
-    ],
+
     display: ['responsive', 'dark'],
     textColor: [
       'focus-within',
@@ -221,4 +210,5 @@ module.exports = {
       addUtilities(newUtilities, variants('boxShadow'))
     }),
   ],
+}
 }
