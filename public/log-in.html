@@ -27,52 +27,47 @@
           <script src="./assets/js/charts-pie.js" defer></script>
         </head>
 <body class="h-screen bg-blue-20">
-    <div>
-        <nav>
-            <div class="grid bg-white shadow-sm">
-                <div class="col-start-1 col-end-3">
-                    <img class="pt-5 pl-20 pb-4" src="../public/assets/img/logo-image.png" alt="">
-                </div>
-                <div class="col-end-11 pt-5 pb-4 col-span-1 pl-80">
-                    <div class="rounded-full sm: mr-14 h-8 w-8 bg-gray-170">
-                        <div class="dropdown inline-block relative">
-                            <button class="font-inter text-gray-170 font-normal py-2 pl-12 rounded inline-flex items-center">
-                                <span class="mr-4">N/A</span>
-                                <img src="../public/assets/img/dropdown.png" alt="">
-                            </button>
-                            <ul class="dropdown-menu absolute hidden w-28 text-gray-170 pt-1">
-                                <li class=""><a
-                                        class="rounded-t bg-gray-200 hover:bg-gray-170 py-2 px-4 block whitespace-no-wrap"
-                                        href="#">One</a></li>
-                                <li class=""><a class="bg-gray-200 hover:bg-gray-170 py-2 px-4 block whitespace-no-wrap"
-                                        href="#">Two</a></li>
-                            </ul>
-                        </div>
-                    </div>
+    <div class="flex justify-between items-center bg-white shadow-sm py-3 px-3 sm:px-12">
+        <div>
+            <img src="../public/assets/img/logo-image.png" alt="">
+        </div>
+        <div class="flex justify-start">
+            <div class="bg-gray-180 w-8 h-8 rounded-full"></div>
+            <div class="rounded-full">
+                <div class="dropdown inline-block relative pt-1 pl-2">
+                    <button class="font-inter text-gray-170 font-normal rounded inline-flex items-center">
+                        <span class="mr-2 sm:mr-3">N/A</span>
+                        <img src="../public/assets/img/dropdown.png" alt="">
+                    </button>
+                    <ul class="dropdown-menu absolute hidden w-28 text-gray-170 pt-1">
+                        <li class=""><a
+                                class="rounded-t bg-gray-200 hover:bg-gray-170 py-2 px-4 block whitespace-no-wrap"
+                                href="#">One</a></li>
+                        <li class=""><a class="bg-gray-200 hover:bg-gray-170 py-2 px-4 block whitespace-no-wrap"
+                                href="#">Two</a></li>
+                    </ul>
                 </div>
             </div>
-        </nav>
+        </div>
     </div>
-    <div
-        class="relative md:left-1/4 lg:left-96 top-9 container md:w-1/2 mx-auto lg:w-5/12 pt-5">
-
-        <div class="relative left-11  bg-white place-content-center rounded-lg h-5/6 pb-40 py-16">
-            <h1 class=" font-inter text-gray-170  text-3xl leading-9 font-medium pt-14 text-center">
+    <div class="flex justify-center">
+        <div class="bg-white place-content-center rounded-lg h-5/6  py-8 lg:py-12 w-11/12 sm:w-1/2 mt-6">
+            <h1 class=" font-inter text-gray-170  text-2xl sm:text-3xl leading-9 font-medium pt-14 text-center">
                 Welcome to Immuna!
             </h1>
-            <h2 class="font-inter text-gray-170 text-xl font-normal leading-6 text-center pt-5  pb-20 ">Connect your wallet</h2>
+            <h2 class="font-inter text-gray-170 text-xl font-normal leading-6 text-center pt-2 pb-20">Connect your wallet</h2>
     
-            <div class="pl-12 pt-28 pr-5 ">
+            <div class="px-12">
                 <img src="../public/assets/img/Ethereum-pic.png" alt="">
                 <form class="rounded pt-4 pb-8">
                     <div class="text-gray-170  ">
                         <input
-                            class=" pl-5 font-inter text-sm font-normal leading-4 appearance-none border rounded-full md:w-64 lg:w-72 xl:w-11/12 h-16 py-2 px-3 text-gray-220 bg-gray-190"
+                            class=" font-inter text-sm font-normal leading-4 appearance-none border rounded-full w-full text-gray-220 bg-gray-190 h-16 pl-5"
                              type="text" placeholder="Enter Wallet Address">
                     </div>
                     <div class="pt-10">
                         <button
-                            class="text-lg font-inter font-medium leading-5 bg-blue-500 hover:bg-blue-700 md:w-64 lg:w-72 xl:w-11/12 w-96 h-16 text-white py-2 px-4 rounded-full">
+                            class="text-lg font-inter font-medium leading-5 bg-blue-500 hover:bg-blue-700 w-full h-16 text-white py-2 px-4 rounded-full">
                             Connect to Wallet
                         </button>
                     </div>

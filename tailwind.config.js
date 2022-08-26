@@ -3,7 +3,7 @@ const plugin = require('tailwindcss/plugin')
 const Color = require('color')
 
 module.exports = {
-  purge: ['public/**/*.html'],
+  content: ['public/**/*.html'],
   theme: {
     themeVariants: ['dark'],
     customForms: (theme) => ({
@@ -20,6 +20,18 @@ module.exports = {
       white: '#ffffff',
       black: '#000000',
       gray: {
+        '10' : '#454545',
+        '07' : '#C8C8C8',
+        '06' : '#636363',
+        '08' : '#F5F5F5',
+        '12' : '#DADADA',
+        '15' : '#ECECEC',
+        '16' : '#A0A0A0',
+        '09': '#242424',
+        '20': '#C2C2C2',
+        '30' : '#5C5C5C',
+        '40': '#D9D9D9',
+        '45': '#2F2F2F',
         '50': '#f9fafb',
         '100': '#f4f5f7',
         '200': '#e5e7eb',
@@ -85,6 +97,7 @@ module.exports = {
       red: {
         'darkRed' : '#CE4848',
         'lightRed' : '#CA0D0D33',
+        '05' : '#FF9898',
         '50': '#fdf2f2',
         '100': '#fde8e8',
         '200': '#fbd5d5',
@@ -156,6 +169,7 @@ module.exports = {
         'dark' : '#1D7DEA',
         '300': '#E6F0FF',
         '400':'#CBE1FF',
+        'border': '#3A82E9'
         
     
       },
