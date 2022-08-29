@@ -19,9 +19,16 @@ module.exports = {
       transparent: 'transparent',
       white: '#ffffff',
       black: '#000000',
+      blackk : {
+        '01' : '#272727'
+      },
       gray: {
+        '004':'#DDDDDD',
+        '005' : '#818181',
+        '04' : '#797979',
         '10' : '#454545',
         '07' : '#C8C8C8',
+        '02' : 'b#A0A0A0',
         '06' : '#636363',
         '08' : '#F5F5F5',
         '12' : '#DADADA',
@@ -97,6 +104,7 @@ module.exports = {
       red: {
         'darkRed' : '#CE4848',
         'lightRed' : '#CA0D0D33',
+        '02':'#DE393A',
         '05' : '#FF9898',
         '50': '#fdf2f2',
         '100': '#fde8e8',
